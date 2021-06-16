@@ -19,9 +19,9 @@
 
 ### 如何快速创建一个React项目
 + npm install -g create-react-app 
-+ create-react-app my-app my-app为自己的demo名称
++ create-react-app my-app （my-app为自己的demo名称）
 
 ### webpack安装(创建项目时可以直接使用这个)
-+ npm install -g yo 缩写
++ npm install -g yo （yo是缩写）
 + npm install -g generator-react-webpack
 + yo react-webpack
