@@ -21,7 +21,7 @@
 + npm install -g create-react-app 
 + create-react-app my-app my-app为自己的demo名称
 
-### webpack安装
+### webpack安装(创建项目时可以直接使用这个)
 + npm install -g yo 缩写
 + npm install -g generator-react-webpack
 + yo react-webpack
