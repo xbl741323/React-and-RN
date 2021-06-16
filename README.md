@@ -11,3 +11,6 @@
 + 原生JavaScript操作DOM繁琐、效率低（DOM-API操作UI）
 + 原生JavaScript直接操作DOM，浏览器会进行大量的重绘重排
 + 原生JavaScript没有组件化编码方案，代码复用率低
+
+### React特点
++ 采用组件化模式，声明式编码，提高开发效率和组件复用率
