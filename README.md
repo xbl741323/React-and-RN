@@ -16,3 +16,12 @@
 + 采用组件化模式，声明式编码，提高开发效率和组件复用率
 + 在ReactNative中可以使用React语法进行移动端开发
 + 使用虚拟DOM+优秀的Diffing算法，尽量减少跟真实DOM的交互
+
+### 如何快速创建一个React项目
++ npm install -g create-react-app 
++ create-react-app my-app my-app为自己的demo名称
+
+### webpack安装
++ npm install -g yo 缩写
++ npm install -g generator-react-webpack
++ yo react-webpack
