@@ -85,8 +85,8 @@
 1. 强制绑定this:通过函数对象的bind()
 2. 箭头函数
 + 方法的绑定传值方法：
-1. <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
-2. <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
+1. <div onClick={(e) => this.deleteRow(id, e)}></div>
+2. <div onClick={this.deleteRow.bind(this, id)}></div>
 + 状态数据不能直接修改或更新，要使用this.setState()
 
 ### 组件三大核心属性2：props
