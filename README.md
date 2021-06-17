@@ -36,3 +36,4 @@
 + 标签中混入JS表达式时要用{}
 + 样式的类名指定不要用class，要用className
 + 内联样式，要用style={{key:'value'}}的形式去写,value要用驼峰规则
++ 虚拟DOM必须只有一个根标签
