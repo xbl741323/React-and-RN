@@ -76,4 +76,18 @@
 1. render是放在哪的？继承React.Component的类的原型对象上，供实例使用
 2. render中的this是谁？继承React.Component的类的实例对象
 
+### 组件三大核心属性1：state
++ state是组件对象最重要的属性，值是对象(可以包含多个 key-value 的组合)
++ 组件被称为"状态机"，通过更新组件的state来更新对应的页面显示(重新渲染组件)
+#### 强烈注意：
++ 组件中render方法中的this为组件实例对象
++ 组件自定义的方法中this为undefined，解决的方法有：
+1. 强制绑定this:通过函数对象的bind()
+2. 箭头函数
++ 状态数据不能直接修改或更新，要使用this.setState()
+
+### 组件三大核心属性2：props
+
+### 组件三大核心属性3：refs与事件处理
+
 
