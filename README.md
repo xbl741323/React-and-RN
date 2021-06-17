@@ -21,7 +21,7 @@
 + npm install -g create-react-app 
 + create-react-app my-app （my-app为自己的demo名称）
 
-### webpack安装(创建项目时可以直接使用这个)
+### Webpack安装(创建项目时可以直接使用这个)
 + npm install -g yo （yo是缩写）
 + npm install -g generator-react-webpack
 + yo react-webpack
@@ -31,7 +31,8 @@
 + 虚拟DOM比较'轻'，真实DOM比较'重'，因为虚拟DOM是React内部在使用，无需真实DOM上那么多的属性
 + 虚拟DOM最终会被React转化为真实DOM，呈现在页面上
 
-### jsx语法规则
+### JSX语法规则
 + 定义虚拟DOM时，不要写引号
 + 标签中混入JS表达式时要用{}
 + 样式的类名指定不要用class，要用className
++ 内联样式，要用style={{key:'value'}}的形式去写
