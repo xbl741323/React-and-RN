@@ -74,6 +74,6 @@
 3. React将返回的虚拟DOM转化为真实DOM，随后呈现在页面上
 + 类式对象的render
 1. render是放在哪的？继承React.Component的类的原型对象上，供实例使用
-2. render中的this是谁？继承React.Component的类的实例对象上
+2. render中的this是谁？继承React.Component的类的实例对象
 
 
