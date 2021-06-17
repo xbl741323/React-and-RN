@@ -84,10 +84,9 @@
 + 组件自定义的方法中this为undefined，解决的方法有：
 1. 强制绑定this:通过函数对象的bind()
 2. 箭头函数
+`<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
 `
-<button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
-<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
-`
+`<button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>`
 + 状态数据不能直接修改或更新，要使用this.setState()
 
 ### 组件三大核心属性2：props
