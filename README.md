@@ -76,7 +76,7 @@
 1. render是放在哪的？继承React.Component的类的原型对象上，供实例使用
 2. render中的this是谁？继承React.Component的类的实例对象
 
-### 组件三大核心属性1：state
+### 类式组件三大核心属性1：state
 + state是组件对象最重要的属性，值是对象(可以包含多个 key-value 的组合)
 + 组件被称为"状态机"，通过更新组件的state来更新对应的页面显示(重新渲染组件)
 #### 强烈注意：
@@ -89,8 +89,13 @@
 2. `<div onClick={this.deleteRow.bind(this, id)}></div>`
 + 状态数据不能直接修改或更新，要使用this.setState()
 
-### 组件三大核心属性2：props
+### 类式组件三大核心属性2：props
++ 每个组件对象都会有props属性
++ 可以从组件外部向组件内部传递变化的数据
++ 注意：组件内部不要修改props内数据的值
++ 组件内部读取用this.props.传递的属性名称的方式
++ 组件可以通过defaultProps属性为props内的数据赋默认值
 
-### 组件三大核心属性3：refs与事件处理
+### 类式组件三大核心属性3：refs与事件处理
 
 
