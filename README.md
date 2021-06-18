@@ -110,5 +110,22 @@ render() {
 + 组件可以通过defaultProps属性为props内的数据赋默认值
 
 ### 类式组件三大核心属性3：refs与事件处理
++ 字符串形式的ref（官方已不推荐使用）
++ 回调函数形式的ref（官方推荐使用）
+```
+<input ref={(c)=>this.input1 = c}></input>
+```
++ React.createRef()形式的ref（官方推荐使用）
+```
+myRef = createRef()
+render() {
+    return (
+      <div className="contain">
+        <input ref={this.myRef}></input>
+        }
+      </div>
+    )
+  }
+```
 
 
