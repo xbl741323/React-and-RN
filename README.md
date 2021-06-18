@@ -92,6 +92,19 @@
 ### 类式组件三大核心属性2：props
 + 每个组件对象都会有props属性
 + 可以从组件外部向组件内部传递变化的数据
+`
+render() {
+    return (
+      <div className="contain">
+        {
+          this.state.list.map((item, index) => {
+            return <Item info={item} key={index} />
+          })
+        }
+      </div>
+    )
+  }
+`
 + 注意：组件内部不要修改props内数据的值
 + 组件内部读取用this.props.传递的属性名称的方式
 + 组件可以通过defaultProps属性为props内的数据赋默认值
