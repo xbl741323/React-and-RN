@@ -174,7 +174,12 @@ saveForm=(val)=>{
 + constructor()
 + componentWillMount()
 + render()
-+ componentDidMount() -- 常用，一般在这个钩子函数中做一些初始化的操作
++ componentDidMount() 
+#### -- 常用，一般在这个钩子函数中做一些初始化的操作：
+例如：
++ 开启定时器
++ 发送网络请求
++ 订阅消息等
 
 2. 更新阶段：由组件内部this.setState()或父组件重新render触发
 + shouldComponentUpdate()
