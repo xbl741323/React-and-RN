@@ -169,5 +169,20 @@ saveForm=(val)=>{
 ### React生命周期
 #### 旧版：
 ![image](https://user-images.githubusercontent.com/49593119/123760302-4a4aca00-d8f3-11eb-8c1a-beca2f08ee0d.png)
+#### 生命周期的三个阶段（旧）：
+1. 初始化阶段：由ReactDOM.render()触发--初次渲染
++ constructor()
++ componentWillMount()
++ render()
++ componentDidMount()
+
+2. 更新阶段：由组件内部this.setState()或父组件重新render触发
++ shouldComponentUpdate()
++ componentWillUpdate()
++ render()
++ componentDidUpdate()
+
+3. 卸载组件：由ReactDOM.unmountComponentAtNode()触发
++ componentWillUnmount()
 
 
