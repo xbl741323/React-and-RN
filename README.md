@@ -145,6 +145,26 @@ render() {
 如果一个函数符合下面2个规范中的一个，那么该函数就是
 1. 若A函数，接收的参数是一个函数，那么A就可以称之为高阶函数
 2. 若A函数，调用的返回值依然是一个函数，那么A就可以称之为高阶函数
-3. 常见的高价函数有：Promise、setTimeout、arr.map()
+```
+saveForm=(val)=>{
+    return (e)=>{
+      this.setState({
+        [val]:e.target.value
+      })
+      console.log(this.state)
+    }
+  }
+
+  render() {
+    return (
+      <div className="contain">
+        <input onChange={this.saveForm('pwd')} />
+        <input onChange={this.saveForm('name')} />
+      </div>
+    )
+  }
+```
+4. 常见的高价函数有：Promise、setTimeout、arr.map()
+
 
 #### 函数的柯里化：通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式
