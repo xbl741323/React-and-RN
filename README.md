@@ -167,6 +167,7 @@ saveForm=(val)=>{
 4. 函数的柯里化：通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式
 
 ### React生命周期
++ 旧版：
 ![image](https://user-images.githubusercontent.com/49593119/123760302-4a4aca00-d8f3-11eb-8c1a-beca2f08ee0d.png)
 
 
