@@ -7,7 +7,7 @@ export class ItemComponent extends React.Component {
         return (
             <div className="item">
                 <div className="item_title">{info.title}
-                    <img src="https://static.wotao.com/assets/mobile/img/icon_new@2x.038e477.png"></img>
+                    <img src="https://static.wotao.com/assets/mobile/img/icon_new@2x.038e477.png" alt=""></img>
                 </div>
                 <div className="item_time">{info.time}</div>
             </div>

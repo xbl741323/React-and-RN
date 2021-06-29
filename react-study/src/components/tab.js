@@ -40,14 +40,14 @@ export class TabComponent extends React.Component {
       <div className="tab">
         {
           this.state.imgList.map((item, index) => {
-            if (index == 2) {
+            if (index === 2) {
               return <div className="tab_item" key={index}>
-                <img src={item.url}></img>
+                <img src={item.url} alt=""></img>
               </div>
             } else {
               return <div className="tab_item" key={index} onClick={(e) => this.changeBar(index, e)}>
-                <img src={this.state.barIndex == index ? item.activeUrl : item.url}></img>
-                <span className={this.state.barIndex == index ? 'active_style' : ''}>{item.title}</span>
+                <img src={this.state.barIndex === index ? item.activeUrl : item.url} alt=""></img>
+                <span className={this.state.barIndex === index ? 'active_style' : ''}>{item.title}</span>
               </div>
             }
           })

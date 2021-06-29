@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import Item from './item'
 import '../styles/contain.css';
-import { Button,Input } from "element-react"
+import ReactDOM from "react-dom";
+import { Button, Input } from "element-react"
 
 export class ContainComponent extends React.Component {
   state = {
@@ -59,8 +60,6 @@ export class ContainComponent extends React.Component {
   render() {
     return (
       <div className="contain">
-        <Button>按钮</Button>
-        <Input placeholder="请输入内容" />
         {
           this.state.list.map((item, index) => {
             return <Item info={item} key={index} />
