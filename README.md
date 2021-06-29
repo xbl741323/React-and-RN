@@ -151,15 +151,14 @@ saveForm=(val)=>{
       this.setState({
         [val]:e.target.value
       })
-      console.log(this.state)
     }
   }
 
   render() {
     return (
       <div className="contain">
-        <input onChange={this.saveForm('pwd')} />
         <input onChange={this.saveForm('name')} />
+        <input onChange={this.saveForm('pwd')} />
       </div>
     )
   }
