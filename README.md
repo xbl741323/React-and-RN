@@ -175,7 +175,7 @@ saveForm=(val)=>{
 + componentWillMount()
 + render()
 + componentDidMount() 
-#### -- 常用，一般在这个钩子函数中做一些初始化的操作：
+#### componentDidMount() -- 常用，一般在这个钩子函数中做一些初始化的操作：
 例如：
 + 开启定时器
 + 发送网络请求
