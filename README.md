@@ -184,7 +184,7 @@ saveForm=(val)=>{
 2. 更新阶段：由组件内部this.setState()或父组件重新render触发
 + shouldComponentUpdate()
 + componentWillUpdate()
-+ render()
++ render()  --必须使用的一个钩子函数
 + componentDidUpdate()
 
 3. 卸载组件：由ReactDOM.unmountComponentAtNode()触发
