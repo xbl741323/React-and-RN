@@ -189,5 +189,9 @@ saveForm=(val)=>{
 
 3. 卸载组件：由ReactDOM.unmountComponentAtNode()触发
 + componentWillUnmount()
++ #### componentWillUnmount() -- 常用，一般在这个钩子函数中做一些初收尾的操作：
+例如：
++ 关闭定时器
++ 取消订阅等
 
 
