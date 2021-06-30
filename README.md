@@ -197,4 +197,8 @@ saveForm=(val)=>{
 #### 新版：
 ![image](https://user-images.githubusercontent.com/49593119/123886902-0c958200-d983-11eb-8019-6e3e657c7bfb.png)
 
-
+#### 路由的基本使用
+1. 明确好界面中的导航栏、展示区
+2. 导航栏的a标签改为Link标签 <Link to="/xxx"></Link>
+3. 展示区写Route标签进行路径的匹配 <Route paht="/xxx" component={Demo}></Route>
+4. <App>的最外侧包裹一个<BrowserRouter>或<HashRouter>
