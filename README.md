@@ -195,5 +195,6 @@ saveForm=(val)=>{
 + 取消订阅等
 
 #### 新版：
-![image](https://user-images.githubusercontent.com/49593119/123768474-f04e0280-d8fa-11eb-897f-5dca88e34816.png)
+![image](https://user-images.githubusercontent.com/49593119/123886902-0c958200-d983-11eb-8019-6e3e657c7bfb.png)
+
 
