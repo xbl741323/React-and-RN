@@ -221,27 +221,27 @@ saveForm=(val)=>{
  + 路由组件：接收到三个固定的属性
  ```
 history:
-   action: "PUSH"
-   block: ƒ block(prompt)
-   createHref: ƒ createHref(location)
-   go: ƒ go(n)
-   goBack: ƒ goBack()
-   goForward: ƒ goForward()
-   length: 5
-   listen: ƒ listen(listener)
-   location: {pathname: "/", search: "", hash: "", state: undefined, key: "24t5hc"}
-   push: ƒ push(path, state)
-   replace: ƒ replace(path, state)
+     action: "PUSH"
+     block: ƒ block(prompt)
+     createHref: ƒ createHref(location)
+     go: ƒ go(n)
+     goBack: ƒ goBack()
+     goForward: ƒ goForward()
+     length: 5
+     listen: ƒ listen(listener)
+     location: {pathname: "/", search: "", hash: "", state: undefined, key: "24t5hc"}
+     push: ƒ push(path, state)
+     replace: ƒ replace(path, state)
 location:
-   hash: ""
-   key: "24t5hc"
-   pathname: "/"
-   search: ""
-   state: undefined
+     hash: ""
+     key: "24t5hc"
+     pathname: "/"
+     search: ""
+     state: undefined
 match:
-   isExact: true
-   params: {}
-   path: "/"
-   url: "/"
+     isExact: true
+     params: {}
+     path: "/"
+     url: "/"
  ```
 
