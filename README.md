@@ -208,3 +208,40 @@ saveForm=(val)=>{
 <Route paht="/xxx" component={Demo}></Route>
 ```
 4. <App>的最外侧包裹一个<BrowserRouter>或<HashRouter>
+ 
+ #### 路由组件与一般组件
+ 1. 写法不同：
+ + 一般组件：<Demo />
+ + 路由组件：<Route path="/demo" component={Demo}>
+ 2. 存放位置不同：
+ + 一般组件：components
+ + 路由组件：pages
+ 3. 接收到的props不同：
+ + 一般组件：写组件时父组件传递了什么，就能接收到什么
+ + 路由组件：接收到三个固定的属性
+ ```
+history:
+   action: "PUSH"
+   block: ƒ block(prompt)
+   createHref: ƒ createHref(location)
+   go: ƒ go(n)
+   goBack: ƒ goBack()
+   goForward: ƒ goForward()
+   length: 5
+   listen: ƒ listen(listener)
+   location: {pathname: "/", search: "", hash: "", state: undefined, key: "24t5hc"}
+   push: ƒ push(path, state)
+   replace: ƒ replace(path, state)
+location:
+   hash: ""
+   key: "24t5hc"
+   pathname: "/"
+   search: ""
+   state: undefined
+match:
+   isExact: true
+   params: {}
+   path: "/"
+   url: "/"
+ ```
+
