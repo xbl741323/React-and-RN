@@ -207,7 +207,7 @@ saveForm=(val)=>{
 ```
 <Route paht="/xxx" component={Demo}></Route>
 ```
-4. <App>的最外侧包裹一个<BrowserRouter>或<HashRouter>
+4. <App>的最外侧包裹一个`<BrowserRouter>`或`<HashRouter>`
  
  #### 路由组件与一般组件
  1. 写法不同：
