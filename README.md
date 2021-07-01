@@ -301,7 +301,7 @@ match:
  接收参数：`const { id, title } = this.props.location.state`  // 解构赋值，接收参数
  ```
  
- 2. 使用withRouter跳转传参（编程式路由导航）
+ 2. 使用withRouter跳转传参（编程式路由导航传参）
  + 通过state传参：
  ```
     this.props.history.push({
@@ -326,3 +326,11 @@ match:
  ```
   const { info } = this.props.location.query // 解构接收参数
  ```
+ 
+ #### 几种编程式路由导航方法总结：
+ 借助this.props.history对象上的API操作路由跳转、前进、后退
++ `this.props.history.push()`
++ `this.props.history.replace()`
++ `this.props.history.go()`
++ `this.props.history.goForward()`
++ `this.props.history.goBack()`
