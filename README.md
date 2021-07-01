@@ -287,13 +287,18 @@ match:
  注册路由*（声明接收）：`<Route path="demo/test/:name/:age" component={Test}></Route>`
  接收参数：`const {id,title} = this.props.match.params`  // 解构赋值，接收参数
  ```
- 
  + 通过search传参：
   ```
  路由链接（携带参数）：`<Link to='/demo/test/id=${info.id}&title=${info.title}'>详情</Link>`
  注册路由*（声明接收）：`<Route path="demo/test" component={Test}></Route>`
  接收参数：`const {search} = this.props.location`  // 解构赋值，接收参数
  备注：获取到的search是urlencoded编码字符串，需要借助querystring解析
+ ```
+ + 通过state传参
+  ```
+ 路由链接（携带参数）：`<Link to={{pathname:"/demo/test",state:{id:"",title:""}}}>详情</Link>`
+ 注册路由*（声明接收）：`<Route path="demo/test" component={Test}></Route>`
+ 接收参数：`const { id, title } = this.props.location.state`  // 解构赋值，接收参数
  ```
  
  2. 使用withRouter跳转传参
