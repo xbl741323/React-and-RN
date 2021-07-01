@@ -301,7 +301,7 @@ match:
  接收参数：`const { id, title } = this.props.location.state`  // 解构赋值，接收参数
  ```
  
- 2. 使用withRouter跳转传参
+ 2. 使用withRouter跳转传参（编程式路由导航）
  + 通过state传参：
  ```
     this.props.history.push({
