@@ -278,3 +278,37 @@ match:
     <Redirect to="/policy/result" />
  </Switch>
  ```
+ 
+ #### 路由传参的几种方式
+ 1. Link params传参，使用代码如下：
+ ```
+ 路由链接（携带参数）：`<Link to='/demo/test/tom/18'>详情</Link>`
+ 注册路由*（声明接收）：`<Route path="demo/test/:name/:age" component={Test}></Route>`
+ 接收参数：`const {id,title} = this.props.match.params`  // 解构赋值，接收参数
+ ```
+ 2. 使用withRouter跳转传参
+ + 使用state传参：
+ ```
+    this.props.history.push({
+            pathname: "/policy-detail",
+            state:{
+                info:this.state.info
+            }
+        })
+ ```
+ ```
+ const { info } = this.props.location.state // 解构接收参数
+ ```
+ + 使用query传参：
+ ```
+    this.props.history.push({
+            pathname: "/policy-detail",
+            query:{
+                info:this.state.info
+            }
+        })
+ ```
+ ```
+ ```
+ const { info } = this.props.location.query // 解构接收参数
+ ```
