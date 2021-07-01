@@ -287,7 +287,7 @@ match:
  接收参数：`const {id,title} = this.props.match.params`  // 解构赋值，接收参数
  ```
  2. 使用withRouter跳转传参
- + 使用state传参：
+ + 通过state传参：
  ```
     this.props.history.push({
             pathname: "/policy-detail",
@@ -299,7 +299,7 @@ match:
  ```
  const { info } = this.props.location.state // 解构接收参数
  ```
- + 使用query传参：
+ + 通过query传参：
  ```
     this.props.history.push({
             pathname: "/policy-detail",
