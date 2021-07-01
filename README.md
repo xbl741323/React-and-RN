@@ -241,3 +241,14 @@ match:
  1. 默认使用的是模糊匹配，（简单记：【输入的路径】必须包括【匹配的路径】，且顺序要一致）
  2. 开启严格匹配：`<Route exact={true} path="/about" component={About}>`
  3. 严格匹配不要随便开启，需要时再开，有些时候开启会导致无法继续匹配二级路由
+ 
+ #### Redirect的使用
+ 1. 一般写在所有路由注册的最下方，当所有的路由都无法匹配时，跳转到Redirect指定的路由
+ 2. 具体代码如下：
+ ```
+ <Route exact path="/" component={home}></Route>
+            <Route path="/policy" component={policy}></Route>
+            <Route exact path="/service" component={service}></Route>
+            <Route exact path="/my" component={my}></Route>
+            <Redirect to="/" />
+ ```
