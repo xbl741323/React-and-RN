@@ -327,7 +327,7 @@ match:
   const { info } = this.props.location.query // 解构接收参数
  ```
  
- #### 几种编程式路由导航方法总结：
+ #### 几种编程式路由导航方法总结：（路由组件自带this.props.history）(一般组件需要用withRouter包裹才有)
  借助this.props.history对象上的API操作路由跳转、前进、后退
 + `this.props.history.push()`
 + `this.props.history.replace()`
