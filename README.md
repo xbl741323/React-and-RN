@@ -280,7 +280,7 @@ match:
  ```
  
  #### 路由传参的几种方式
- 1. 使用Link或NavLink跳转，使用代码如下：
+ 1. 使用Link或NavLink跳转传参，使用代码如下：
  + 通过params传参：
  ```
  路由链接（携带参数）：`<Link to='/demo/test/tom/18'>详情</Link>`
