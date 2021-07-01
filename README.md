@@ -242,13 +242,27 @@ match:
  2. 开启严格匹配：`<Route exact={true} path="/about" component={About}>`
  3. 严格匹配不要随便开启，需要时再开，有些时候开启会导致无法继续匹配二级路由
  
- #### Redirect的使用
+#### Switch的使用
+ 1. 通常情况下，path和component是一一对应的关系
+ 2. Switch可以提高路由匹配效率（单一匹配）
+ 3. 具体使用代码如下：
+ ```
+ <Switch>
+    <Route exact path="/" component={home}></Route>
+    <Route path="/policy" component={policy}></Route>
+    <Route exact path="/service" component={service}></Route>
+    <Route exact path="/my" component={my}></Route>
+    <Redirect to="/" />
+ </Switch>
+ ```
+ 
+#### Redirect的使用
  1. 一般写在所有路由注册的最下方，当所有的路由都无法匹配时，跳转到Redirect指定的路由
- 2. 具体代码如下：
+ 2. 具体使用代码如下：
  ```
  <Route exact path="/" component={home}></Route>
-            <Route path="/policy" component={policy}></Route>
-            <Route exact path="/service" component={service}></Route>
-            <Route exact path="/my" component={my}></Route>
-            <Redirect to="/" />
+ <Route path="/policy" component={policy}></Route>
+ <Route exact path="/service" component={service}></Route>
+ <Route exact path="/my" component={my}></Route>
+ <Redirect to="/" />
  ```
