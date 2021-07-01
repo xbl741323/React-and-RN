@@ -309,6 +309,5 @@ match:
         })
  ```
  ```
- ```
- const { info } = this.props.location.query // 解构接收参数
+  const { info } = this.props.location.query // 解构接收参数
  ```
