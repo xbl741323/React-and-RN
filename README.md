@@ -266,3 +266,15 @@ match:
  <Route exact path="/my" component={my}></Route>
  <Redirect to="/" />
  ```
+ 
+ #### 嵌套路由
+ 1. 注册子路由时要写上父路由的path值
+ 2. 路由的匹配是按照路由的顺序进行的
+ 3. 具体代码如下：
+ ```
+ <Switch>
+    <Route exact path="/policy/result" component={result}></Route>
+    <Route exact path="/policy/need" component={need}></Route>
+    <Redirect to="/policy/result" />
+ </Switch>
+ ```
