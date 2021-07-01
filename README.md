@@ -336,7 +336,7 @@ match:
 + `this.props.history.goBack()`
  
  #### BrowserRouter与HashRouter的区别
-1. 底层原理不一样：
+1. 底层原理不一样
 + BrowserRouter使用的是H5的history API，不兼容IE9及以下版本
 + HashRouter使用的是URL的哈希值
  
