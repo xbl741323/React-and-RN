@@ -1,0 +1,9 @@
+.policy_detail{
+    width: 100%;
+}
+.policy_detail_content{
+   margin-top: 45px;
+   padding: 10px;
+   font-size: 16px;
+   font-weight: bold;
+}

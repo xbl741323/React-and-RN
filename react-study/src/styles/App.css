@@ -10,4 +10,14 @@ body {
   position: relative;
 }
 
+a{
+  text-decoration: none;
+  color: #363636;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
 

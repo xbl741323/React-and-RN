@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/tab.css';
+import { Link } from 'react-router-dom';
 
 export class TabComponent extends React.Component {
   state = {
@@ -7,11 +8,13 @@ export class TabComponent extends React.Component {
     imgList: [
       {
         title: '首页',
-        url: 'images/shouye.png',
-        activeUrl: 'images/shouye_active.png'
+        linkUrl: "/",
+        url: '../images/shouye.png',
+        activeUrl: '../images/shouye_active.png'
       },
       {
         title: '政策广场',
+        linkUrl: "/policy",
         url: '../images/zhengce.png',
         activeUrl: '../images/zhengce_active.png'
       },
@@ -20,11 +23,13 @@ export class TabComponent extends React.Component {
       },
       {
         title: '服务分类',
+        linkUrl: "/service",
         url: '../images/fenglei.png',
         activeUrl: '../images/fenglei_active.png'
       },
       {
         title: '我的',
+        linkUrl: "/my",
         url: '../images/wode.png',
         activeUrl: '../images/wode_active.png'
       }
@@ -44,15 +49,19 @@ export class TabComponent extends React.Component {
               return <div className="tab_item" key={index}>
                 <img src={item.url} alt=""></img>
               </div>
-            } else {
+            } else { // Link 的replace属性可以开启replace模式，开启后路由无法后退
               return <div className="tab_item" key={index} onClick={(e) => this.changeBar(index, e)}>
-                <img src={this.state.barIndex === index ? item.activeUrl : item.url} alt=""></img>
-                <span className={this.state.barIndex === index ? 'active_style' : ''}>{item.title}</span>
+                <Link className={this.state.barIndex === index ? 'active_style tab_item' : 'hide_sty tab_item'} to={item.linkUrl}>
+                  <img src={this.state.barIndex === index ? item.activeUrl : item.url} alt=""></img>
+                  <span className={this.state.barIndex === index ? 'active_style' : ''}>
+                    {item.title}
+                  </span>
+                </Link>
               </div>
             }
           })
         }
-      </div>
+      </div >
     )
   }
 }

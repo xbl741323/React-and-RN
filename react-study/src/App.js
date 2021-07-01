@@ -1,19 +1,25 @@
 import Tab from './components/tab'
-import Head from './components/head'
-import Contain from './components/contain'
 import React from 'react';
 import './styles/App.css';
-
+import Router from './router/router'
+import { withRouter } from 'react-router-dom';
 class App extends React.Component {
   render() {
+    const { pathname } = this.props.location  // 解构赋值
     return (
       <div className="index">
-        <Head />
-        <Contain />
-        <Tab />
+        <Router />
+        {
+          pathname === "/" ||
+          pathname === "/policy" ||
+          pathname === "/policy/result" ||
+          pathname === "/policy/need" ||
+          pathname === "/service" ||
+          pathname === "/my" ? <Tab /> : ""
+        }
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

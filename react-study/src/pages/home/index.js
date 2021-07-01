@@ -1,10 +1,9 @@
-import React, { createRef } from 'react';
-import Item from './item'
-import '../styles/contain.css';
-import ReactDOM from "react-dom";
-import { Button, Input } from "element-react"
+import React from 'react';
+import Item from '../../components/item'
+import Head from '../../components/head'
+import '../../styles/home.css';
 
-export class ContainComponent extends React.Component {
+export class HomeComponent extends React.Component {
   state = {
     list: [
       {
@@ -59,7 +58,8 @@ export class ContainComponent extends React.Component {
   }
   render() {
     return (
-      <div className="contain">
+      <div className="home">
+        <Head />
         {
           this.state.list.map((item, index) => {
             return <Item info={item} key={index} />
@@ -70,7 +70,4 @@ export class ContainComponent extends React.Component {
   }
 }
 
-ContainComponent.defaultProps = {
-};
-
-export default ContainComponent;
+export default HomeComponent;

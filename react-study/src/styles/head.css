@@ -10,4 +10,15 @@
     border-bottom: 1px solid #f4f6f8;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.fixed_left_icon{
+    position: absolute;
+    left: 10px;
+}
+.fixed_right_icon{
+    position: absolute;
+    right: 10px;
 }
