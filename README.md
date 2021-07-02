@@ -350,8 +350,8 @@ match:
  
 4. 备注: HashRouter可以用于解决一些路径错误相关的问题
  
-### redux
+## Redux
  
- #### 原理图
+ #### 工作原理图
  ![image](https://user-images.githubusercontent.com/49593119/124234320-7611be00-db46-11eb-8e78-1a521be5ac30.png)
 
