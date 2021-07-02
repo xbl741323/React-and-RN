@@ -356,18 +356,18 @@ match:
  ![image](https://user-images.githubusercontent.com/49593119/124234320-7611be00-db46-11eb-8e78-1a521be5ac30.png)
  
  #### redux的三个核心概念
- ##### 1、action
+ #### 1、action
  1. 动作的对象
  2. 包含2个属性
  + type：标识属性，值为字符串，唯一必要属性
  + data：数据属性，值类型任意，可选属性
  3. 例子：`{type:'ADD_STUDENT',data:{name:'tom',age:18}}`
  
- ##### 2、reducer
+ #### 2、reducer
  1. 用于初始化状态、加工状态
  2. 加工时，根据旧的state和action，产生新的state的纯函数
  
- ##### 3、store
+ #### 3、store
  1. 将state、action、reducer联系在一起的对象
  2. 如何得到此对象？
  
