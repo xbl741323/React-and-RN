@@ -352,6 +352,12 @@ match:
  
 ## Redux
  
- #### 工作原理图
+ #### 工作原理图：
  ![image](https://user-images.githubusercontent.com/49593119/124234320-7611be00-db46-11eb-8e78-1a521be5ac30.png)
+ 
+ #### redux的三个核心概念
+ 
+ #### redux的核心API
+ 
+ #### 使用redux编写应用
 
