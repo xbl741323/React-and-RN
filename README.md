@@ -353,7 +353,7 @@ match:
 ## Redux
  #### redux是什么
  1. redux是一个专门用于做状态管理的js库（不是react插件库）
- 2. 它可以用在react、vue、angular等项目中，但基与react配合使用
+ 2. 它可以用在react、vue、angular等项目中，但基本与react配合使用
  3. 作用：集中式管理react应用中多个组件共享的状态
  
  #### 什情况下需要使用redux
