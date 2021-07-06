@@ -351,6 +351,15 @@ match:
 4. 备注: HashRouter可以用于解决一些路径错误相关的问题
  
 ## Redux
+ #### redux是什么
+ 1. redux是一个专门用于做状态管理的js库（不是react插件库）
+ 2. 它可以用在react、vue、angular等项目中，但基与react配合使用
+ 3. 作用：集中式管理react应用中多个组件共享的状态
+ 
+ #### 什情况下需要使用redux
+ 1. 某个组件的状态，需要让其他组件可以随时拿到（共享）时
+ 2. 一个组件需要改变另一个组件的状态（通信）
+ 3. 总体原则：能不用就不用，如果不用比较吃力才考虑使用
  
  #### 工作原理图：
  ![image](https://user-images.githubusercontent.com/49593119/124234320-7611be00-db46-11eb-8e78-1a521be5ac30.png)
