@@ -383,4 +383,10 @@ match:
  #### redux的核心API
  
  #### 使用redux编写应用
+ 
+ ### react-redux
+ #### 两大核心方法
+ 1. connect
+ 
+ 2. Provider
 
