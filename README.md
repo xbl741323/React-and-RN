@@ -381,8 +381,9 @@ match:
  2. 如何得到此对象？
  
  #### redux的核心API
- 
- #### 使用redux编写应用
+ + createStore
+ + applyMiddleware
+ + combineReducers
  
  ### react-redux
  #### 两大核心方法
