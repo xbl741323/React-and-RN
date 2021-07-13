@@ -388,6 +388,39 @@ match:
  ### react-redux
  #### 两大核心方法
  1. connect
- 
  2. Provider
+ 
+ ### 延伸拓展
+ 
+ #### Hooks
+ 1. React Hook/Hooks是什么？
+ ```
+ (1).Hook是React16.8.0版本增加的新特性/新语法
+ (2).可以让你在函数组件中使用state以及其他的React特性
+ ```
+ 
+ 2. 三个常用的Hook
+  ```
+ (1).state Hook: React.useState()
+ (2).state Hook: React.useEffect()
+ (3).state Hook: React.useRef()
+ ```
+ 
+ 3. State Hook
+ ```
+ (1).State Hook让函数组件也可以有state状态，并进行状态数据的读写操作
+ (2).语法：const [xxx,setXxx] = React.useState(initValue)
+ (3).useState()说明：
+     参数：第一次初始化指定的值在内部做缓存
+     返回值：包含2个元素的数组，第一个为内部当前状态值，第2个为更新状态值的函数
+ (4).setXxx()的2种写法：
+     setXxx(newValue)：参数为非函数值，直接指定新的状态值，内部用其覆盖原来的状态值
+     setXxx(value=>newVlue)：参数为函数，接收原本的状态，返回新的状态值，内部用其覆盖原来的状态值
+ ```
+ 
+ 4.Effect Hook
+ ```
+(1).Effect Hook 可以让你在函数组件中执行副作用操作（用于模拟类组件中的生命周期函数钩子）
+(2).React中的副作用操作：
+ ```
 
