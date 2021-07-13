@@ -418,8 +418,8 @@ match:
      setXxx(value=>newVlue)：参数为函数，接收原本的状态，返回新的状态值，内部用其覆盖原来的状态值
  ```
  
- 4.Effect Hook
- ```
+ 4. Effect Hook
+  ```
  (1).Effect Hook 可以让你在函数组件中执行副作用操作（用于模拟类组件中的生命周期函数钩子）
  (2).React中的副作用操作：
      发ajax请求数据获取
