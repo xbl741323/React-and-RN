@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // 用于祖孙组件传值
 const childContext = React.createContext()
-const { Provider } = childContext
+const { Provider,Consumer } = childContext
 export class Result extends Component {
     state = {
         name: "result"
@@ -38,7 +38,14 @@ class C extends Component {
         console.log(this.context,"输出context")
         return (
             <div style={{ height: 50 + 'px', background: 'lightblue' }}>
-                我是C
+                我是C{this.context}
+                <Consumer>
+                    {
+                        value=>{
+                            return value
+                        }
+                    }
+                </Consumer>
             </div>
         )
     }
