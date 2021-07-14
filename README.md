@@ -455,14 +455,20 @@ match:
  ```
  3. 后代组件读取数据：
  // 第一种方式：仅适用于类组件
- static contextType = xxxContext // 声明接收context
- this.context // 读取context中的value数据
+ ```
+  static contextType = xxxContext // 声明接收context
+  this.context // 读取context中的value数据
+ ```
  
  // 第二种方式：函数组件与类组件都可以
+ ```
  <xxxContext.Consumer>
   {
      value=>{ // value就是context中的value数据
        要显示的内容
-  }
+    }
   }
  </xxxContext.Consumer>
+
+ ```
+ 注意：`在开发应用中一般不用context，一般都用它的封装react插件`
