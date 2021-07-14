@@ -445,6 +445,7 @@ match:
  ```
  
  #### Context
+ + 理解：一种组件间通信方式，常用于【祖组件】与【后代组件】间通信
  
  1. 创建Context容器对象：`const XxxContext = React.createContext()`
  2. 渲染子组件时，外面包裹xxxContext.Provider，通过value属性给后代组件传递数据：
