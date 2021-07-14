@@ -443,3 +443,26 @@ match:
  (2). 语法：const refContainer = useRef()
  (3). 作用：保存标签对象，功能与React.createRef()一样
  ```
+ 
+ #### Context
+ 
+ 1. 创建Context容器对象：`const XxxContext = React.createContext()`
+ 2. 渲染子组件时，外面包裹xxxContext.Provider，通过value属性给后代组件传递数据：
+ ```
+ <xxxContext.Provider vlaue={数据}>
+  子组件
+ </xxxContext.Provider>
+ ```
+ 3. 后代组件读取数据：
+ // 第一种方式：仅适用于类组件
+ static contextType = xxxContext // 声明接收context
+ this.context // 读取context中的value数据
+ 
+ // 第二种方式：函数组件与类组件都可以
+ <xxxContext.Consumer>
+  {
+     value=>{ // value就是context中的value数据
+       要显示的内容
+  }
+  }
+ </xxxContext.Consumer>
