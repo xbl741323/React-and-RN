@@ -211,8 +211,8 @@ saveForm=(val)=>{
  
  #### 路由组件与一般组件
  1. 写法不同：
- + 一般组件：<Demo />
- + 路由组件：<Route path="/demo" component={Demo}>
+ + 一般组件：`<Demo />`
+ + 路由组件：`<Route path="/demo" component={Demo}>`
  2. 存放位置不同：
  + 一般组件：components
  + 路由组件：pages
