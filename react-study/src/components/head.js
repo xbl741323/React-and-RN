@@ -10,6 +10,8 @@ export class HeadComponent extends React.Component {
 
    render() {
       const { pathname } = this.props.location
+      console.log(this.props,"子组件中的props")
+      let { title } = this.props
       return (
          <div className="head">
             {
@@ -17,7 +19,7 @@ export class HeadComponent extends React.Component {
                pathname === "/service" ||
                pathname === "/my" ? "" : <i onClick={(e) => this.goBack(e)} className="el-icon-arrow-left fixed_left_icon"></i>
             }
-            <span>{this.props.title}</span>
+            <span>{title}</span>
          </div>
       )
    }
