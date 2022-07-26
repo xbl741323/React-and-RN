@@ -17,11 +17,11 @@
 + 在ReactNative中可以使用React语法进行移动端开发
 + 使用虚拟DOM+优秀的Diffing算法，尽量减少跟真实DOM的交互
 
-### 如何快速创建一个React项目
+### 如何快速创建一个React项目(创建项目时可以直接使用这个)
 + npm install -g create-react-app 
 + create-react-app my-app （my-app为自己的demo名称）
 
-### Webpack安装(创建项目时可以直接使用这个)
+### Webpack安装
 + npm install -g yo （yo是缩写）
 + npm install -g generator-react-webpack
 + yo react-webpack
@@ -211,8 +211,8 @@ saveForm=(val)=>{
  
  #### 路由组件与一般组件
  1. 写法不同：
- + 一般组件：<Demo />
- + 路由组件：<Route path="/demo" component={Demo}>
+ + 一般组件：`<Demo />`
+ + 路由组件：`<Route path="/demo" component={Demo}>`
  2. 存放位置不同：
  + 一般组件：components
  + 路由组件：pages
