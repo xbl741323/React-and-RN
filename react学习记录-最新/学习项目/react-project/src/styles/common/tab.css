@@ -1,0 +1,31 @@
+.tab {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	color: #555555;
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	background: #fbfbfb;
+	border-top: 1px solid #e7e6eb;
+}
+
+.tab-item {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+.tab-item img {
+	width: 24px;
+	height: 24px;
+	margin-bottom: 5px;
+}
+
+.active-sty {
+	color: #36a6fe !important;
+}
