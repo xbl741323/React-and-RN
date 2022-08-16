@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './styles/App.css';
-import Tab from "./components/common/tab"
+import Tab from "./components/common/tab-hook"
+import TabCalss from "./components/common/tab"
 
 function App() {
   return (

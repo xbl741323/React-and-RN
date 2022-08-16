@@ -92,7 +92,7 @@ export default TabComponent
 ```
 
 ### 2、函数式组件
-+ 1、无状态组件（没有this的概念）
++ 1、React16.8版本之前是无状态组件，React16.8版本后和Hook结合使用（函数式组件没有this的概念）
 + 2、创建方式
 ```
 function TabComponent() {}
@@ -169,3 +169,6 @@ function TabComponent() {
 
 export default TabComponent
 ```
+
+### 3、注意事项
++ 1、组件引用时，首字母都需要大写

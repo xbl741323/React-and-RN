@@ -31,7 +31,7 @@ function TabComponent() {
       activeUrl: '../images/wode_active.png'
     }
   ])
-  function changeTab(e) {
+  const changeTab = (e) => {
     setTabIndex(e)
   }
   return (
