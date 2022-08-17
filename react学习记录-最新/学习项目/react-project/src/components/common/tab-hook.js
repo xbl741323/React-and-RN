@@ -1,9 +1,11 @@
 import React from 'react'
 import "../../styles/common/tab.css"
+import { useNavigate } from "react-router-dom";
 /*
   函数式组件写法(用了Hook)(没有this的概念)
 */
 function TabComponent() {
+  const navigate = useNavigate()
   const [tabIndex, setTabIndex] = React.useState(0)
   const [tabList] = React.useState([
     {
@@ -20,19 +22,21 @@ function TabComponent() {
     },
     {
       title: '服务分类',
-      linkUrl: "/service",
+      linkUrl: "/classify",
       url: '../images/fenglei.png',
       activeUrl: '../images/fenglei_active.png'
     },
     {
       title: '我的',
-      linkUrl: "/my",
+      linkUrl: "/personal",
       url: '../images/wode.png',
       activeUrl: '../images/wode_active.png'
     }
   ])
   const changeTab = (e) => {
     setTabIndex(e)
+    let url = tabList[e].linkUrl
+    navigate(url)
   }
   return (
     <div className="tab">

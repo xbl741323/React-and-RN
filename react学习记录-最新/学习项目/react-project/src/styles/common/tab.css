@@ -3,7 +3,7 @@
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	color: #555555;
+	color: #555555 !important;
 	display: flex;
 	align-items: center;
 	padding: 10px 0;
@@ -28,4 +28,9 @@
 
 .active-sty {
 	color: #36a6fe !important;
+}
+
+.hide-sty {
+	text-decoration: none !important;
+	color: #555555
 }

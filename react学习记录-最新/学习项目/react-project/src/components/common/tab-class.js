@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../styles/common/tab.css"
+import { NavLink } from 'react-router-dom';
 /*
   类式组件写法(有this)
 */
@@ -27,7 +28,7 @@ class TabComponent extends React.Component {
       },
       {
         title: '我的',
-        linkUrl: "/my",
+        linkUrl: "/personal",
         url: '../images/wode.png',
         activeUrl: '../images/wode_active.png'
       }
@@ -44,8 +45,10 @@ class TabComponent extends React.Component {
         {
           this.state.tabList.map((item, index) => {
             return <div className={`tab-item ${this.state.tabIndex == index ? 'active-sty' : ''}`} key={index} onClick={(e) => this.changeTab(index, e)}>
-              <img src={this.state.tabIndex == index ? item.activeUrl : item.url}></img>
-              <span>{item.title}</span>
+              <NavLink className={`tab-item hide-sty ${this.state.tabIndex == index ? 'active-sty' : ''}`} to={item.linkUrl}>
+                <img src={this.state.tabIndex == index ? item.activeUrl : item.url}></img>
+                <span>{item.title}</span>
+              </NavLink>
             </div>
           })
         }

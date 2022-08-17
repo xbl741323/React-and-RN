@@ -172,3 +172,21 @@ export default TabComponent
 
 ### 3、注意事项
 + 1、组件引用时，首字母都需要大写
+
+## 二、ref的使用
+
+### 1、类式组件中ref的使用
+```
+```
+
+### 2、函数式组件中ref的使用
+```
+```
+
+## 常见问题汇总
+
+### 1、如何设置多个className
+```
+使用模板字符串
+className={`title ${index === this.state.active ? 'active' : ''}`}
+```
