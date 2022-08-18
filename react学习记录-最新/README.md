@@ -184,7 +184,7 @@ export default TabComponent
 ## 三、路由V6特性
 
 ### 1、路由特性变化
-+ 1、<Switch>重命名为<Routes>
++ 1、`<Switch>`重命名为`<Routes>`
 + 2、component/render被element替代
 + 3、默认显示路由添加index属性，默认为true
 + 4、Redirect 组件取消 变为 Navigate
