@@ -23,3 +23,7 @@
 .list-item>span:nth-of-type(2) {
   margin-right: 20px;
 }
+
+.left-sty{
+  margin-left: 10px;
+}

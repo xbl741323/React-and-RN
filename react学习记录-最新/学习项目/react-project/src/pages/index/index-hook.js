@@ -3,6 +3,16 @@ import "../../styles/index.css"
 import { Button } from 'antd';
 
 function Index() {
+  const [user, setUser] = React.useState({
+    name: "胡桃",
+    sex: "女",
+    likes: [
+      {
+        title: "爱好",
+        value: "埋人"
+      }
+    ]
+  })
   const [list, setList] = React.useState([
     {
       title: "标题1",
@@ -30,6 +40,20 @@ function Index() {
     setList([...temList])
   }
 
+  function updateList(index) {
+    let temList = list
+    temList[index].title = "呼呼呼"
+    setList([...temList])
+  }
+
+  function updateUser() {
+    let temUser = user
+    temUser.name = "甘雨"
+    temUser.sex = "男"
+    temUser.likes[0].value = "加班"
+    setUser({ ...user, temUser })
+  }
+
   return (
     <div className="index">
       <div className="list">
@@ -39,11 +63,20 @@ function Index() {
               <span>{item.title}</span>
               <span>{item.value}</span>
               <Button type="danger" onClick={(e) => delList(index, e)}>删除</Button>
+              <Button className="left-sty" type="primary" onClick={(e) => updateList(index, e)}>修改</Button>
             </div>
           })
         }
       </div>
       <Button type="primary" onClick={(e) => addList(e)}>增加</Button>
+      <div className="list-item">
+        <span>{user.name}</span>
+        <span className="left-sty">{user.sex}</span>
+        <span className="left-sty">{user.name}</span>
+        <span className="left-sty">{user.likes[0].title}</span>
+        <span className="left-sty">{user.likes[0].value}</span>
+        <Button className="left-sty" type="primary" onClick={(e) => updateUser(e)}>修改</Button>
+      </div>
     </div>
   )
 }
