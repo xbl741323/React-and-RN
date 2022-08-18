@@ -242,8 +242,7 @@ import {BrowserRouter,Route, Routes,Navigate} from 'react-router-dom';
 </BrowserRouter>
 ```
 
-+ 5、导航
-
+### 4、导航
 + 1、声明式导航
 ```
 使用关键字:NavLink,该关键词能得到点击时的标签，并且默认添加class=“active”
