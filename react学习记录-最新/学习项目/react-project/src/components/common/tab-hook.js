@@ -24,7 +24,7 @@ function TabComponent() {
     },
     {
       title: '服务分类',
-      linkUrl: "/classify",
+      linkUrl: "/classify/child-one",
       url: '../images/fenglei.png',
       activeUrl: '../images/fenglei_active.png'
     },
@@ -45,6 +45,9 @@ function TabComponent() {
     let index = routeList.indexOf(location.pathname)
     if (index !== -1) {
       setTabIndex(index)
+    }
+    if (location.pathname == '/classify/child-one' || location.pathname == '/classify/child-one') {
+      setTabIndex(2)
     }
   }
   useEffect(() => {

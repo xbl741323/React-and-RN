@@ -320,6 +320,8 @@ import { Route, Routes, useRoutes } from 'react-router-dom';
 import Index from "../pages/index/index-hook"
 import Policy from "../pages/policy/index-hook"
 import Classify from "../pages/classify/index-hook"
+import ChildOne from "../pages/classify/child-one-hook"
+import ChildTwo from "../pages/classify/child-two-hook"
 import Personal from "../pages/personal/index-hook"
 
 function BasicRoute() {
@@ -334,7 +336,17 @@ function BasicRoute() {
     },
     {
       path: "/classify",
-      element: <Classify />
+      element: <Classify />,
+      children: [
+        {
+          path: "child-one",
+          element: <ChildOne />
+        },
+        {
+          path: "child-two",
+          element: <ChildTwo />
+        }
+      ]
     },
     {
       path: "/Personal",
@@ -352,17 +364,22 @@ import { Route, Routes } from 'react-router-dom';
 import Index from "../pages/index/index-hook"
 import Policy from "../pages/policy/index-hook"
 import Classify from "../pages/classify/index-hook"
+import ChildOne from "../pages/classify/child-one-hook"
+import ChildTwo from "../pages/classify/child-two-hook"
 import Personal from "../pages/personal/index-hook"
 
 function BasicRoute() {
-   return (
-     <Routes>
-       <Route path="/" element={<Index />}></Route>
-       <Route path="/policy" element={<Policy />}></Route>
-       <Route path="/classify" element={<Classify />}></Route>
-       <Route path="/personal" element={<Personal />}></Route>
-     </Routes>
-   )
+    return (
+      <Routes>
+        <Route path="/" element={<Index />}></Route>
+        <Route path="/policy" element={<Policy />}></Route>
+        <Route path="/classify" element={<Classify />}>
+          <Route path="child-one" element={<ChildOne />}></Route>
+          <Route path="child-two" element={<ChildTwo />}></Route>
+        </Route>
+        <Route path="/personal" element={<Personal />}></Route>
+      </Routes>
+    )
 }
 
 export default BasicRoute;
