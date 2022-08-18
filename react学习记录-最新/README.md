@@ -293,7 +293,26 @@ function Films(){
 export default Films
 ```
 
-+ 3、路由传参
++ 3、路由跳转
++ navigate(path,{replace: true}) 路由跳转，清除历史记录
+```
+此方式跳转会删除历史记录，使用和传参方式和 navigate() 相同，只是增加 {replace: true}参数
+Link组件也可以使用 replace 方式，只需要在Link标签上添加 replace 属性即可
+navigate('/child1/child1B',{replace: true})
+```
++ navigate(num) 路由跳转，前进、后退
+```
+// 历史记录 前进
+navigate(1)
+
+// 历史记录 后退
+navigate(-1)
+
+// 历史记录 后退两步
+navigate(-2)
+```
+
++ 4、路由传参
 + 方式1（路径传参）
 ```
 navigate(`/home/message/detail/${id}/${title}`)
@@ -311,9 +330,9 @@ navigate(`/home/message/detail`,{state:{name:'碰磕',age:111},replace:true})
 参数在query中
 props.match.query.参数名
 //这样就拿到传来的数据了
-
 ```
-+ 4、useRoutes（可以根据路由表绘制路由）（嵌套路由就是在有子路由的路由中设置children）
+
++ 5、useRoutes（可以根据路由表绘制路由）（嵌套路由就是在有子路由的路由中设置children）
 ```
 import React from "react"
 import { Route, Routes, useRoutes } from 'react-router-dom';
@@ -383,6 +402,46 @@ function BasicRoute() {
 }
 
 export default BasicRoute;
+```
+
++ 6、 嵌套路由中用Outlet定义子路由出口
+```
+import React from "react"
+import { Tabs } from 'antd';
+import { Outlet, useNavigate } from 'react-router-dom';
+
+function Index() {
+  const { TabPane } = Tabs;
+  const navigate = useNavigate()
+  const [tabList] = React.useState([
+    {
+      name: "子页面1",
+      path: "/classify/child-one"
+    },
+    {
+      name: "子页面2",
+      path: "/classify/child-two"
+    }
+  ])
+  const onChange = (index) => {
+    console.log(index);
+    navigate(tabList[index].path)
+  };
+  return (
+    <div className="classify">
+      <Tabs centered defaultActiveKey="0" onChange={onChange}>
+        {
+          tabList.map((item, index) => {
+            return <TabPane tab={item.name} key={index}></TabPane>
+          })
+        }
+      </Tabs>
+      <Outlet></Outlet>{/* 显示子路由页面 */}
+    </div>
+  )
+}
+
+export default Index
 ```
 
 ## 常见问题汇总

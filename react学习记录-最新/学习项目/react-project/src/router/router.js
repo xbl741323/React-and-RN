@@ -43,7 +43,7 @@ function BasicRoute() {
     }
   ])
 
-  // 原生状态
+  // 上面等同于下面
   // return (
   //   <Routes>
   //     <Route path="/" element={<Index />}></Route>

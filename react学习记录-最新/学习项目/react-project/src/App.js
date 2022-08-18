@@ -9,7 +9,9 @@ function App() {
   let status = routeList.includes(location.pathname)
   return (
     <div className="App">
-      <Nav />
+      {
+        !status ? <Nav /> : ''
+      }
       <Router />
       {
         status ? <Tab /> : ''
