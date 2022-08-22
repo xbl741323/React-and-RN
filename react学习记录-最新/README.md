@@ -324,11 +324,12 @@ props.match.params.参数名
 + 方式2(state传参)
 ```
 navigate(`/home/message/detail`,{state:{name:'碰磕',age:111},replace:true})
-//组件“//home/message/detail”为已经定义好的路由,state负责传值state:{参数:值}
+// replace: true就是history.replace
+// 组件“//home/message/detail”为已经定义好的路由,state负责传值state:{参数:值}
 
 参数在query中
 props.match.query.参数名
-//这样就拿到传来的数据了
+// 这样就拿到传来的数据了
 ```
 
 + 5、useRoutes（可以根据路由表绘制路由）（嵌套路由就是在有子路由的路由中设置children）

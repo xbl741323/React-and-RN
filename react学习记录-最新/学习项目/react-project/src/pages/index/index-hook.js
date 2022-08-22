@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useRef } from "react"
 import "../../styles/index.css"
-import { Button } from 'antd';
+import { Button, Input } from 'antd';
 
 function Index() {
   const [user, setUser] = React.useState({
@@ -23,6 +23,8 @@ function Index() {
       value: "值2"
     }
   ])
+
+  const textRef = useRef(0)
 
   function addList() {
     let temList = list
@@ -54,6 +56,11 @@ function Index() {
     setUser({ ...user, temUser })
   }
 
+  function changeText(e) {
+    console.log(e, 'e')
+    console.log(textRef, 'textRef')
+  }
+
   return (
     <div className="index">
       <div className="list">
@@ -76,6 +83,9 @@ function Index() {
         <span className="left-sty">{user.likes[0].title}</span>
         <span className="left-sty">{user.likes[0].value}</span>
         <Button className="left-sty" type="primary" onClick={(e) => updateUser(e)}>修改</Button>
+      </div>
+      <div>
+        <Input ref={textRef} placeholder="请输入" onChange={changeText} />
       </div>
     </div>
   )

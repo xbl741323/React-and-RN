@@ -22,7 +22,12 @@ function Index() {
   const toDetail = (index) => {
     console.log(index)
     // navigate(`/detail?id=${index}`)
-    navigate(`/detail?id=${index}`)
+    // navigate(`/detail?id=${index}`)
+    navigate('/detail', {
+      state: {
+        id: index
+      }
+    })
   }
   return (
     <div className="policy">
