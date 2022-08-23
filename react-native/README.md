@@ -1,6 +1,6 @@
 # React Native学习记录
 
-## 一、环境配置（最新完整版配置请看官网：https://www.reactnative.cn/docs/environment-setup）
+## 一、环境配置（完整版配置请看官网：https://www.reactnative.cn/docs/environment-setup）
 ### 1、基本运行环境
 + 1、安装Node（Node版本应大于等于14）
 + 2、安装java运行环境（React Native 需要 Java Development Kit [JDK] 11）
