@@ -44,3 +44,91 @@ yarn android
 # 或者
 yarn react-native run-android
 ```
+
+### 4、模拟器调试
++ 1、点击模拟器（使模拟器获取焦点) 
++ 2、快捷键ctrl+m
++ 3、点选debug（之后会自动跳转到浏览器）
+
+# 二、基础语法
+### 1、掌握React（需要有React学习基础）
++ 1、JSX语法
++ 2、组件（分类、传参、属性、状态）
++ 3、生命周期
++ 4、Hook API
++ 5、Redux
++ 6、常用安装包
+
+### 2、StyleSheet
++ StyleSheet是RN中声明样式的API
++ RN中的样式与CSS的不同:
+```
+1、没有继承性（RN中的继承只发生在Text组件上）
+2、样式名采用小驼峰命名（fontSize）
+3、所有尺寸都是没有单位（width：100）
+4、有些特殊的样式名（marginHorizontal(水平外边距)，marginVertical（垂直外边距)）
+```
+示例：
+```
+import React from 'react'
+import { View, Text, StyleSheet } from 'react-native'
+
+export default function index() {
+  return (
+    <View>
+      <Text style={styles.colorSty}>index</Text>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  colorSty: {
+    fontSize: 54,
+    color: 'pink'
+  },
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+  }
+});
+
+```
+
+### 3、Flexbox（和css中的flex布局基本一样）
++ 1、术语
+```
+1、容器（container）
+采用Flex布局的元素，称为Flex容器（flex container），简称“容器”
+2、项目（item）
+容器所有子元素，称为Flex项目（flex item），简称“项目”
+3、主轴（main axis）
+4、交叉轴（cross axis）
+```
+
+### 4、组件和API
++ 1、简介
+```
+RN中的核心组件，是对原生组件的封装
+原生组件：Android或ios内的组件
+核心组件：RN中最常用的，用在react-native的组件
+```
++ 2、核心组件
+```
+1、View 视图组件       
+2、Text 文本组件       
+3、Alert 警告框组件    
+4、Button 按钮组件
+5、Switch 开关组件
+6、StatusBar 状态栏组件
+7、ActivityIndicator 加载指示器组件
+8、Image 图片组件
+9、TextInput 输入框组件
+10、Touchable 触屏组件（共三个）
+11、ScrollView 滚动视图组件
+12、SectionList 分组列表组件
+13、FlatList 高性能列表组件
+14、Animated 动画组件
+```
++ 3、第三方组件
++ 4、自定义组件
+### 5、路由和导航
