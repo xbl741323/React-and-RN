@@ -130,5 +130,13 @@ RN中的核心组件，是对原生组件的封装
 14、Animated 动画组件
 ```
 + 3、第三方组件
+```
+1、WebView 相当于内置浏览器
+2、Picker 下拉框
+3、Swiper 展示轮播效果
+4、AsyncStorage 持久化存储系统
+5、Geolocation 获取定位信息
+6、Camera 调用摄像头
+```
 + 4、自定义组件
 ### 5、路由和导航
