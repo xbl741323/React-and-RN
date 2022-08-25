@@ -131,9 +131,9 @@ RN中的核心组件，是对原生组件的封装
 ```
 + 3、第三方组件
 ```
-1、WebView 相当于内置浏览器
-2、Picker 下拉框
-3、Swiper 展示轮播效果
+1、WebView 相当于内置浏览器（https://github.com/react-native-webview/react-native-webview）
+2、Picker 下拉框（https://github.com/react-native-picker/picker）
+3、Swiper 展示轮播效果（https://github.com/leecade/react-native-swiper）
 4、AsyncStorage 持久化存储系统
 5、Geolocation 获取定位信息
 6、Camera 调用摄像头
