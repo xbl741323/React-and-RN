@@ -136,7 +136,8 @@ RN中的核心组件，是对原生组件的封装
 3、Swiper 展示轮播效果（https://github.com/leecade/react-native-swiper）
 4、AsyncStorage 持久化存储系统（https://github.com/react-native-async-storage/async-storage）
 5、Geolocation 获取定位信息（https://github.com/react-native-geolocation/react-native-geolocation）
-6、Camera 调用摄像头（https://github.com/react-native-camera/react-native-camera）
+6、Camera 调用摄像头（https://github.com/mrousavy/react-native-vision-camera）
+7、ImagePicker（https://github.com/react-native-image-picker/react-native-image-picker）          
 ```
 + 4、自定义组件
 ### 5、路由和导航
