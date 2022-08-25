@@ -112,7 +112,7 @@ export default function classify() {
 
   return (
     <SafeAreaView style={styles.containStyle}>
-      {/* <FlatList
+      <FlatList
         data={DATA}
         renderItem={renderItem}
         keyExtractor={(index) => index}
@@ -140,7 +140,7 @@ export default function classify() {
           return <Text>没有更多数据了</Text>
         }}
         inverted={false}
-      /> */}
+      />
       {/* <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
         {
           numList.map((item, index) => {

@@ -4,6 +4,6 @@ import Classify from "./views/pages/classify"
 
 export default function App() {
   return (
-    <Classify />
+    <Index />
   )
 }
