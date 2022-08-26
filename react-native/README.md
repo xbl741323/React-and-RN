@@ -139,5 +139,8 @@ RN中的核心组件，是对原生组件的封装
 6、Camera 调用摄像头（https://github.com/mrousavy/react-native-vision-camera）
 7、ImagePicker（https://github.com/react-native-image-picker/react-native-image-picker）          
 ```
-+ 4、自定义组件
 ### 5、路由和导航
++ 1、RN中的路由是通过 React-Navigation来完成的
+```
+官方地址：https://reactnavigation.org/
+```
