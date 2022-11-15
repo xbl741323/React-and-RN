@@ -1,2 +1,3 @@
-# React
-React学习记录
+# React & RN
+React 和 React Native 的学习记录
+
