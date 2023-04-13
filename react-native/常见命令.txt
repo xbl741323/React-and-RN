@@ -1,0 +1,22 @@
+android端：
+连接模拟器（夜神模拟器）命令：adb connect 127.0.0.1:62001
+连接模拟器（雷电模拟器）命令：adb connect 127.0.0.1:5555
+生成发行 APK 包，只需在终端中运行以下命令：
+cd android
+./gradlew assembleRelease
+
+连接模拟器常见问题：
+1、adb server version (36) doesn't match this client (41); killing. . .
+
+原因：
+adb版本不对，Android SDK的版本和模拟器的adb版本不一致，使用命令adb version查看Android SDK的adb版本，再到夜神模拟器的Nox目录下的bin目录，使用Nox_adb version查看夜神模拟器的adb版本。若版本不一致，则采用下述解决方案。
+
+解决方法：
+1.将Android SDK目录\platform-tools下的adb.exe、AdbWinApi.dll、AdbWinUsbApi.dll替换到夜神模拟器Nox\bin目录下三个文件。
+2.再将模拟器adb路径下的nox_adb.exe文件重命名为nox_adb_bak.exe，再复制一份Android SDK的adb.exe文件到模拟器adb路径下并重命名为Nox_adb.exe
+3.替换完成后，重新打开模拟器，adb连接即可
+
+ios端：
+基本依赖构建： npm i
+ios包依赖构建：pod install
+运行命令：yarn ios
